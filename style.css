@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body{
+    border: 2px solid blue;
+} */
+
+.navbar {
+  border: 2px solid red;
+  width: 100%;
+}
+
+header {
+  background-image: url(./assets/Hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 221px 44px 221px;
+}
+.header-container {
+  max-width: 998px;
+}
+.header-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header-article{
+    text-align: center;
+    padding: .5rem 0rem 2rem 0rem;
+}
+.header-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-button {
+  text-decoration: none;
+  background: #000;
+  color: #ffff;
+  padding: 1rem;
+  -o-border-radius: .5rem;
+  border-radius: .5rem;
+}
