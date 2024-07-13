@@ -81,7 +81,6 @@ header {
   display: grid;
   gap: 2rem;
 }
-.web-dev-container,
 .inspiration-container > p,
 h2 {
   text-align: center;
@@ -94,12 +93,13 @@ h2 {
 .web-dev-card-container {
   display: grid;
   place-items: center;
-  /* width: 100%; */
+  
 }
 .web-dev-card {
   /*max-width: 946px;
   */
   display: flex;
+  border: 2px solid rebeccapurple;
   align-items: center;
   justify-content: space-between;
   gap: 10rem;
@@ -119,6 +119,11 @@ h2 {
 }
 .web-dev-card-3 {
   background-image: linear-gradient(to right, #f5f4f4, #faf5f5);
+}
+.web-dev-text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .web-dev-text-content > h4 {
   font-size: 1.5rem;
@@ -178,6 +183,12 @@ h2 {
 .current-target-container > p,
 h2 {
   text-align: center;
+  width : 100ch;
+}
+.current-target-container >
+h2 {
+  text-transform: capitalize;
+  font-weight: bold;
 }
 .current-target-cart-main-container {
   display: flex;
@@ -225,19 +236,22 @@ h2 {
 
 /* I need support section start */
 .support-container{
-  border: 2px solid blue;
   display: grid;
   place-items: center;
   width: 100%;
+  padding-block: 3rem;
 }
 .need-support-container {
   width: 1140px;
-  border: 2px solid red;
+}
+.need-support-article {
+  padding-bottom: 1.5rem;
+  color: #e9e7e7;
 }
 .need-support-section-container {
   background-image: url(./assets/handshake.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -245,10 +259,42 @@ h2 {
   -o-border-radius: 1rem;
   border-radius: 1rem;
   padding: 4rem;
+
+  display: grid;
+  place-items: center;
 }
 
 .need-support-title {
   font-style: 1rem;
+  font-weight: bold;
+  color : #f7f7f7;
+}
+.need-support-section-input-section{
+}
+.need-support-section-input-section > div > input{
+  background: #ffffff;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  width: 300px;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border-radius: .5rem;
+}
+.need-support-section-input-section > div > button{
+  background: #ffffff;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  text-transform: capitalize;
   font-weight: bold;
 }
 /* I need support section End */
