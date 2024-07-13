@@ -72,14 +72,24 @@ header {
 
 /* why web dev section style start */
 .web-dev-container {
-  border: 2px solid khaki;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  padding-block: 6rem;
   display: grid;
+  padding-block: 6rem;
   gap: 2rem;
+}
+.web-dev-header{
+  display: grid;
+  place-items: center;
+}
+.web-dev-header> h2, p{
+text-align: center;
+
+}
+.web-dev-header> h2{
+  text-transform: capitalize;
+}
+.web-dev-header>  p{
+text-align: center;
+width: 100ch;
 }
 .inspiration-container > p,
 h2 {
@@ -88,18 +98,15 @@ h2 {
 }
 .web-dev-container > p {
   text-align: center;
-  padding-bottom: 3rem;
 }
 .web-dev-card-container {
   display: grid;
   place-items: center;
-  
 }
 .web-dev-card {
   /*max-width: 946px;
   */
   display: flex;
-  border: 2px solid rebeccapurple;
   align-items: center;
   justify-content: space-between;
   gap: 10rem;
@@ -120,7 +127,7 @@ h2 {
 .web-dev-card-3 {
   background-image: linear-gradient(to right, #f5f4f4, #faf5f5);
 }
-.web-dev-text-content{
+.web-dev-text-content {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -128,11 +135,12 @@ h2 {
 .web-dev-text-content > h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 .web-dev-text-content > p {
   text-transform: capitalize;
   padding-bottom: 3rem;
+  text-align: left;
 }
 .web-dev-img-content {
   width: 240px;
@@ -150,7 +158,7 @@ h2 {
 
 /* Inspiration style section start here */
 .inspiration-container {
-  padding-block: 3rem;
+  padding-bottom: 3rem;
   display: grid;
   place-items: center;
 }
@@ -183,10 +191,8 @@ h2 {
 .current-target-container > p,
 h2 {
   text-align: center;
-  width : 100ch;
 }
-.current-target-container >
-h2 {
+.current-target-container > h2 {
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -235,10 +241,10 @@ h2 {
 /* My current target style ends here */
 
 /* I need support section start */
-.support-container{
+.support-container {
   display: grid;
   place-items: center;
-  width: 100%;
+  /* width: 100%; */
   padding-block: 3rem;
 }
 .need-support-container {
@@ -260,41 +266,63 @@ h2 {
   border-radius: 1rem;
   padding: 4rem;
 
+}
+.support-wrapp {
   display: grid;
   place-items: center;
 }
-
 .need-support-title {
   font-style: 1rem;
   font-weight: bold;
-  color : #f7f7f7;
+  color: #f7f7f7;
 }
-.need-support-section-input-section{
-}
-.need-support-section-input-section > div > input{
+.need-support-section-input-section > div > input {
   background: #ffffff;
   border: none;
   outline: none;
   padding: 1rem;
   width: 300px;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
-  border-radius: .5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
-.need-support-section-input-section > div > button{
+.need-support-section-input-section > div > button {
   background: #ffffff;
   border: none;
   outline: none;
   padding: 1rem;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
-  border-radius: .5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   text-transform: capitalize;
   font-weight: bold;
 }
 /* I need support section End */
+
+/* Footer section style start */
+footer{
+  background: hsl(222 43% 9% / .3);
+  padding-inline: 9.375rem;
+  padding-block: 2rem;
+}
+#footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+}
+.social-media-links{
+  display: flex;
+  gap: 1rem;
+}
+.footer-title{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* Footer section style End */
