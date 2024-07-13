@@ -7,8 +7,26 @@
 } */
 
 .navbar {
-  border: 2px solid red;
-  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  padding-block: 1.5rem;
+}
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-btn {
+  padding: 0.75rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 
 header {
@@ -34,9 +52,9 @@ header {
   font-size: 3rem;
   font-weight: bold;
 }
-.header-article{
-    text-align: center;
-    padding: .5rem 0rem 2rem 0rem;
+.header-article {
+  text-align: center;
+  padding: 0.5rem 0rem 2rem 0rem;
 }
 .header-btn-container {
   display: flex;
@@ -48,6 +66,189 @@ header {
   background: #000;
   color: #ffff;
   padding: 1rem;
-  -o-border-radius: .5rem;
-  border-radius: .5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
+
+/* why web dev section style start */
+.web-dev-container {
+  border: 2px solid khaki;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding-block: 6rem;
+  display: grid;
+  gap: 2rem;
+}
+.web-dev-container,
+.inspiration-container > p,
+h2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.web-dev-container > p {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.web-dev-card-container {
+  display: grid;
+  place-items: center;
+  /* width: 100%; */
+}
+.web-dev-card {
+  /*max-width: 946px;
+  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  padding: 3rem;
+  max-width: 940px;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+}
+.web-dev-card-1 {
+  background-image: linear-gradient(to right, #f5f4f4, #faf5f5);
+}
+.web-dev-card-2 {
+  background-image: linear-gradient(to right, #faf5f5, #f5f4f4);
+}
+.web-dev-card-3 {
+  background-image: linear-gradient(to right, #f5f4f4, #faf5f5);
+}
+.web-dev-text-content > h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding-bottom: 1.5rem;
+}
+.web-dev-text-content > p {
+  text-transform: capitalize;
+  padding-bottom: 3rem;
+}
+.web-dev-img-content {
+  width: 240px;
+}
+.web-dev-text-content [type="button"] {
+  padding: 0.75rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 1px solid #0d1321;
+  color: #0d1321;
+  cursor: pointer;
+}
+/* why web dev section style end */
+
+/* Inspiration style section start here */
+.inspiration-container {
+  padding-block: 3rem;
+  display: grid;
+  place-items: center;
+}
+.inspiration-container > h2 {
+  text-transform: capitalize;
+}
+.inspiration-container > p {
+  padding-bottom: 3rem;
+  max-width: 800px;
+}
+.inspiration-video-container {
+  display: grid;
+  place-items: center;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.inspiration-video {
+}
+/* Inspiration style section ends here */
+
+/* My current target style start form here. */
+.current-target-container {
+  display: grid;
+  place-items: center;
+}
+.current-target-container > p,
+h2 {
+  text-align: center;
+}
+.current-target-cart-main-container {
+  display: flex;
+  gap: 1rem;
+  max-width: 1140px;
+}
+.current-target-container > p {
+  padding-bottom: 3rem;
+}
+.current-target-card {
+  padding: 2.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.current-target-card > div {
+  display: grid;
+  place-items: start;
+  gap: 1rem;
+}
+.current-target-card > img {
+  padding-bottom: 1.5rem;
+}
+.current-target-card > div > h4 {
+  text-transform: capitalize;
+}
+.current-target-card > div > a {
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+}
+
+.current-target-card-1 {
+  background: hsl(19 100% 56% / 0.5);
+}
+.current-target-card-2 {
+  background: hsl(215 100% 48% / 0.5);
+}
+.current-target-card-3 {
+  background: hsl(52 100% 50% / 0.5);
+}
+/* My current target style ends here */
+
+/* I need support section start */
+.support-container{
+  border: 2px solid blue;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.need-support-container {
+  width: 1140px;
+  border: 2px solid red;
+}
+.need-support-section-container {
+  background-image: url(./assets/handshake.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+
+.need-support-title {
+  font-style: 1rem;
+  font-weight: bold;
+}
+/* I need support section End */
